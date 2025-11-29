@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portofolio Saya</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fff9e9; /* warna cream */
+            font-family: "Poppins", Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* --- Shape dekorasi bergerak --- */
+        .shape {
+            position: fixed;
+            width: 40px;
+            height: 40px;
+            opacity: 0.35;
+            animation: float 6s ease-in-out infinite alternate;
+            z-index: -1;
+        }
+
+        .circle { border-radius: 50%; background: #ff6f61; }
+        .square { background: #6ecbff; }
+        .triangle {
+            width: 0; 
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 40px solid #ffd93b;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(40px); }
+        }
+
+        /* --- Judul Portofolio --- */
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            color: #e63946;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        /* --- Style gambar portofolio --- */
+        img {
+            width: 100%;
+            max-width: 900px;
+            display: block;
+            margin: 25px auto;
+            border-radius: 14px;
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Shape dekorasi -->
+<div class="shape circle" style="top: 80px; left: 50px;"></div>
+<div class="shape square" style="top: 300px; right: 70px;"></div>
+<div class="shape triangle" style="top: 520px; left: 150px;"></div>
+<div class="shape circle" style="bottom: 120px; right: 120px;"></div>
+<div class="shape square" style="bottom: 260px; left: 100px;"></div>
+
+<h1>Portofolio Saya</h1>
+
+<img src="images/1.png" alt="">
+<img src="images/2.png" alt="">
+<img src="images/3.png" alt="">
+<img src="images/4.png" alt="">
+<img src="images/5.png" alt="">
+<img src="images/6.png" alt="">
+<img src="images/7.png" alt="">
+<img src="images/8.png" alt="">
+<img src="images/9.png" alt="">
+<img src="images/10.png" alt="">
+<img src="images/11.png" alt="">
+
+</body>
+</html>
